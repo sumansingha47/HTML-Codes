@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form in HTML</title>
+</head>
+<body>
+  <h1>Form in HTML</h1>
+  <h2>Basic Form</h2>
+  <form action="/action">
+    <label>
+      About yourself
+      <input placeholder="About yourself"/>
+    </label>
+    <br>
+    <label>
+      Username
+      <input type="text" placeholder="Enter Name"/>
+    </label>
+    <br>
+    <label>
+      email
+      <input type="email" placeholder="Email Address"/>
+    </label>
+    <br>
+    <label>
+      password
+      <input type="password" placeholder="Password"/>
+    </label>
+    <br>
+    <label>
+      Number
+      <input type="number" placeholder="Phone Number"/>
+    </label>
+    <br>
+    <label>
+      Study time
+      <input type="time"/>
+    </label>
+    <br>
+    <label>
+      Your favourite color
+      <input type="color"/>
+    </label>
+    <br>
+    <!-- BUTTONS (Type of buttons) -->
+    <button type="submit">Submit</button>
+    <button type="button">Button</button>
+    <button type="reset">Reset</button>
+    <!-- INPUT BUTTON (Button using Input Element) -->
+    <input type="submit" value="Submit">
+    <input type="button" value="Button">
+  </form>
+
+  <hr>
+
+  <h2>A Better Form</h2>
+  <form action="/action">
+    <div>
+      <label for="yourself">About yourself</label>
+      <input id="yourself"/>
+    </div>
+    <div>
+      <label for="username">Username</label>
+      <input type="text" placeholder="Enter username" id="username">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" placeholder="Enter email" id="email">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password">
+    </div>
+    <div>
+      <label for="number">Number</label>
+      <input type="number" placeholder="Phone Number" id="number">
+    </div>
+    <div>
+      <label for="color">Your favourite color</label>
+      <input type="color" placeholder="Choose your favourite color" id="color">
+    </div>
+    <button type="submit">Submit</button>
+    <button type="button">Button</button>
+    <button type="reset">Reset</button>
+    <!-- INPUT BUTTON (Button using Input Element) -->
+    <input type="submit" value="Click Submit">
+    <input type="button" value="Click Button">
+  </form>
+
+  <hr>
+  
+  <h2>Form 3 (use of "name" attribute)</h2>
+  <form action="/action">
+    <div>
+      <label for="username">Name</label>
+      <input type="text" placeholder="Enter Name" id="username" name="user">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="text" placeholder="Email Address" id="emailId" name="email">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="text" id="password" name="pass">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+
+  <h2>Search on any website(Youtube)</h2>
+  <form action="https://www.youtube.com/results?">
+    <input type="text" id="search" placeholder="Search on YouTube" name="search_query">
+    <button type="submit">Search</button>
+  </form>
+
+  <hr>
+
+  <h2>Search on Google</h2>
+  <form action="https://www.google.com/search?">
+    <input type="text" id="search" placeholder="Search on Google" name="q">
+    <button type="submit">Search</button>
+  </form>
+
+  <hr>
+
+  <h2>Checkbox input type in Form</h2>
+  <form action="/action">
+    <input type="checkbox" id="age" name="age">
+    <label for="age">I am 18+</label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Radio Button</h2>
+  <form action="/action">
+    <input type="radio" name="fruit" id="apple" value="apple">
+    <label for="apple">apple</label>
+    <input type="radio" name="fruit" id="mango" value="mango">
+    <label for="mango">mango</label>
+    <input type="radio" name="fruit" id="banana" value="banana">
+    <label for="banana">banana</label>
+
+    <button type="submit">submit</button>
+
+  </form>
+  <h2>Checkbox</h2>
+  <h2>Choose your subjects: </h2>
+  <form action="/action">
+    <div>
+      <input type="checkbox" id="math" name="subjects" value="math">
+      <label for="math">math</label>
+      <input type="checkbox" id="science" name="subjects" value="science">
+      <label for="sci">science</label>
+      <input type="checkbox" id="english" name="subjects" value="english">
+      <label for="english">english</label>
+    </div>
+    <div>
+      <h2>Create a "Dopdown" in a HTML Form</h2>
+      Choose your profession
+      <select name="profession" id="profession">
+        <option selected>Select your option</option>
+        <option value="stu">Student</option>
+        <option value="dev">Developer</option>
+      </select>
+    </div>
+
+    <button type="submit">submit</button>
+
+  </form>
+
+
+  
+</body>
+</html>
